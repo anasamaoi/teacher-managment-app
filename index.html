@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#121212"/>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>إدارة المعلمين</title>
+</head>
+<body>
+  <div class="app">
+    <h1>نظام إدارة المعلمين</h1>
+    <form id="teacherForm">
+      <input type="text" id="name" placeholder="اسم المعلم" required />
+      <input type="text" id="subject" placeholder="المادة" required />
+      <input type="text" id="school" placeholder="المدرسة" required />
+      <input type="text" id="phone" placeholder="رقم الهاتف" required />
+      <textarea id="notes" placeholder="ملاحظات الزيارة"></textarea>
+      <button type="submit">إضافة</button>
+    </form>
+    <h2>قائمة المعلمين</h2>
+    <ul id="teacherList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
